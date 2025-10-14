@@ -1,0 +1,39 @@
+/* footer */
+
+.box-footer-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.logo-footer {
+    width: 100px;
+}
+
+.box-footer-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 350px;
+}
+
+.small-box-footer-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+footer {
+    font-family: Arial;
+    background-color: #8B806F;
+    color: white;
+}
+
+.links-footer {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

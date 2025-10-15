@@ -37,3 +37,15 @@ a {
     text-decoration: none;
     color: white;
 }
+
+#button-footer {
+    background-color: #121619;
+    color: white;
+    border-radius: 10px;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    box-shadow: ;
+}

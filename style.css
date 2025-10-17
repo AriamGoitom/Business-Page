@@ -115,3 +115,21 @@ a {
     gap: 20px;
     padding-right: 50px;
 }
+
+/* reference */
+
+.div-1 {
+    background-color: #A6A6A6;
+    width: 593px;
+    height: 751px;
+}
+
+/* .picture-reference {
+    width: 40px;
+    height: 40px;
+} */
+
+img {
+    width: 40px;
+    height: 40px;
+}

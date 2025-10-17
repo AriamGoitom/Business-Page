@@ -1,3 +1,6 @@
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -163,12 +166,18 @@ body {
     width: auto;
     height: 30px;
     margin-right: 10px;}
+
+    
+
+
+
+
 }
 /* footer */
 
 footer {
-    width: 593px;
-    height: 588px;
+    /* width: 593px; */
+    /* height: 588px; */
     font-family: Arial;
     background-color: #8B806F;
     color: white;
@@ -203,7 +212,7 @@ footer {
 }
 
 .logo-footer {
-    width: 200px;
+    width: 100px;
 }
 
 .box-footer-2 {

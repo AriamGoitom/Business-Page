@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-  
-   
+
+
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                 <a href="#about us">About Us</a>
                 <a href="#contact us">Contact Us</a>
             </div>
-
+            <!-- Navbar search & language  -->
             <div class="topnav-right">
                 <div class="search-box">
                     <input width="20" type="text" placeholder="search">
@@ -40,7 +40,43 @@
                 </select>
             </div>
         </nav>
-        <div class="booking-form">
+
+        <!-- Navbar Booking Form  -->
+        <section class="booking-bar">
+            <form action="/action_page.php" class="booking-form">
+
+                <label for="checkin" class="sr-only">Check in</label>
+                <input type="text" id="checkin" placeholder="checkin" onfocus="(this.type='date')"
+                    onblur="if(!this.value)this.type='text'">
+
+                <label for="checkout" class="sr-only">Check out</label>
+                <input type="text" id="checkout" placeholder="checkout" onfocus="(this.type='date')"
+                    onblur="if(!this.value)this.type='text'">
+
+                <label for="adult" class="sr-only">Adult</label>
+                <select id="adult" name="adult">
+                    <option value="0">Adult</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="children" class="sr-only">Children</label>
+                <select id="children" name="children">
+                    <option value="0">Children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <button type="submit" class="btn-book">Book</button>
+
+            </form>
+        </section>
+
+        <!-- <div class="booking-form">
             <div class="form-input">
                 <input type="text" placeholder="Check-in">
                 <input type="text" placeholder="Check-out">
@@ -50,7 +86,7 @@
             <div class="navbar-btn">
                 <button class="booking-btn">Book</button>
             </div>
-        </div>
+        </div> -->
 
     </header>
 
@@ -67,75 +103,178 @@
             <button class="hero-btn">Book a table</button>
             <button class="hero-btn">Meeting & Event</button>
         </div>
+    </section>
 
+    <section class="intro-section">
+        <h1>
+            Asia Garden Hotel
+        </h1>
+        <p>
+            Crafted with aesthetics, refined Thai ornaments are incorporated into the design concept, from the
+            traditional Thai roof shape to the wooden sunshade panels. The unique carved lattice pattern for these
+            sunshades were inspired by the auspicious ‘pla tapien’, a plaited fish mobile traditionally woven using
+            coconut fronds, perfectly connecting the contemporary world with the exquisite Orient of the past.
+        </p>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <a href="about.html">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/about-hotel.png" style="width: 100%" alt="About Hotel">
+                    <div class="text">About Hotel</div>
+                </div>
+            </a>
+
+            <a href="about.html">
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/room-suite.png" style="width:100%">
+                    <div class="text">Room & Suite</div>
+                </div>
+            </a>
+
+            <a href="about.html">
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/special-offer.png" style="width:100%">
+                    <div class="text">Special Offers</div>
+                </div>
+            </a>
+
+            <a href="about.html">
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/dining.png" style="width:100%">
+                    <div class="text">Dining</div>
+                </div>
+            </a>
+
+            <a href="about.html">
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/bar-drink.png" style="width:100%">
+                    <div class="text">Bar & Drinks</div>
+                </div>
+            </a>
+
+            <a href="about.html">
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/meeting-event.png" style="width:100%">
+                    <div class="text">Meeting & Events</div>
+                </div>
+            </a>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
     </section>
 
 
+    <!-- Footer Section -->
 
-<section>
+    <footer>
+        <div class="box-footer-1">
+            <div class="image-footer">
+                <img class="logo-footer" src="./img/company-logo.png" alt="A picture of the logo">
+            </div>
+            <div class="text-footer-1">
+                <p class="title-footer">Asia Garden Hotel</p>
+                <p>48 Oriental Avenue, Bangkok, 10500, Thailand</p>
+                <p>+66 (0) 2 659 9000 </p>
+                <p>mobkk-reservations@mohg.com</p>
+            </div>
+        </div>
+        <hr>
 
+        <div class="footer-bottom">
 
+            <div class="box-footer-2">
+                <div class="text-footer-2">
+                    <p class="newsletter-footer">
+                        Newsletter
     
-</section>
-
-
-
-
-
-
-
-
-<footer>
-    <div class="box-footer-1">
-        <div class="image-footer">
-            <img class="logo-footer" src="./img/company-logo.png" alt="A picture of the logo">
-        </div>
-        <div class="text-footer-1">
-            <p class="title-footer">Asia Garden Hotel</p>
-            <p>48 Oriental Avenue, Bangkok, 10500, Thailand</p>
-            <p>+66 (0) 2 659 9000 </p>
-            <p>mobkk-reservations@mohg.com</p>
-        </div>
-    </div>
-    <hr>
-    <div class="box-footer-2">
-        <div class="text-footer-2">
-            <p class="newsletter-footer">
-                Newsletter
-            </p>
-            <p class="newsletter-text-footer">
-                Subscribe to our newsletter to see what's happening at 
-                Asia Garden Hotel and to take advantage of our offers.
-            </p>
-        </div>
-        <form class="form-footer">
-            <input type="text" placeholder="email adress" id="input-footer">
-            <input type="submit" value="Sign up" id="button-footer">
-        </form>
-        <!-- <div class="small-box-footer-1"></div> -->
-    </div>
-    <hr>
-    <div class="box-footer-3">
-        <div class="links-footer">
-            <a href="">Home</a>
-            <a href="">Room</a>
-            <a href="">Restaurant</a>
-            <a href="">Reference</a>
-            <a href="">About us</a>
-            <a href="">Contact us</a>
-        </div>
-            <div class="social-media-footer">
-                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img src="./img/youtube.png" alt=""></a>
-                <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt=""></a>
-                <a href="https://x.com" target="_blank"><img src="./img/twitter.png" alt=""></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt=""></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+                    </p>
+                    <p class="newsletter-text-footer">
+                        Subscribe to our newsletter to see what's happening at
+                        Asia Garden Hotel and to take advantage of our offers.
+                    </p>
+                </div>
+                <form class="form-footer">
+                    <input type="text" placeholder="email adress" id="input-footer">
+                    <input type="submit" value="Sign up" id="button-footer">
+                </form>
+                <!-- <div class="small-box-footer-1"></div> -->
             </div>
-            <div class="copyright-notice">
-                <p>Asia Garden Hotels @ 2025. All rights reserved.</p>
+
+            <hr>
+            <div class="box-footer-3">
+                <div class="links-footer">
+                    <a href="">Home</a>
+                    <a href="">Room</a>
+                    <a href="">Restaurant</a>
+                    <a href="">Reference</a>
+                    <a href="">About us</a>
+                    <a href="">Contact us</a>
+                </div>
+                <div class="social-media-footer">
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/youtube.png" alt=""></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    <a href="https://x.com" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+                </div>
+                <div class="copyright-notice">
+                    <p>Asia Garden Hotel @ 2025. All rights reserved.</p>
+                </div>
             </div>
-    </div>
-</footer>
+        </div>
+    </footer>
 </body>
 
 </html>

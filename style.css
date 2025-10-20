@@ -462,6 +462,10 @@ footer {
   opacity: 0.9;
 }
 
+/* -------- ROOMS PAGE STYLES -------- */
+
+
+
 /* -------- DINING PAGE STYLES -------- */
 
 .dining-hero img {
@@ -472,9 +476,7 @@ position: relative;
 
 
 
-
-
-/* media queries  */
+/* media queries mobile-tablet */
 @media screen and (min-width: 650px){
 .hamburger {
     display: none;

@@ -489,8 +489,8 @@ footer {
   background-color: #fff;
   border-radius: 8px;
   padding: 16px;
-  flex: 1 1 280px;
-  max-width: 320px;
+  flex: 1 1 100%;
+  max-width: 100%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
@@ -678,6 +678,12 @@ footer {
     justify-content: flex-start;
   }
 
+.room-list {
+    flex: 1 1 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+  }
+
+
 }
 
 
@@ -767,11 +773,11 @@ footer {
 .Rooms {
     gap: 32px;
   }
-  .room-list {
-    flex: 1 1 300px;
-    max-width: 300px;
-  }
 
+.room-list {
+    flex: 1 1 calc(33.333% - 24px);
+    max-width: calc(33.333% - 24px);
+  }
 
 
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
 
 
@@ -32,6 +33,9 @@
             </div>
             <!-- Navbar search & language  -->
             <div class="topnav-right">
+                <div>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+                </div>
                 <div class="search-box">
                     <input width="20" type="text" placeholder="search">
                 </div>
@@ -42,16 +46,16 @@
             </div>
         </nav>
 
-        <!-- Navbar Booking Form  -->
+        <!-- Responsiv Navbar Booking Form  -->
         <section class="booking-bar">
             <form action="/action_page.php" class="booking-form">
 
                 <label for="checkin" class="sr-only">Check in</label>
-                <input type="text" id="checkin" placeholder="checkin" onfocus="(this.type='date')"
+                <input type="text" id="checkin" placeholder="Check in" onfocus="(this.type='date')"
                     onblur="if(!this.value)this.type='text'">
 
                 <label for="checkout" class="sr-only">Check out</label>
-                <input type="text" id="checkout" placeholder="checkout" onfocus="(this.type='date')"
+                <input type="text" id="checkout" placeholder="Check out" onfocus="(this.type='date')"
                     onblur="if(!this.value)this.type='text'">
 
                 <label for="adult" class="sr-only">Adult</label>

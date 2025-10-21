@@ -299,7 +299,7 @@ a {
     height: 588px;
 }
 
-.picture-customer-review {
+.image-section-customer-review {
     width: 100px;
     height: 200px;
     display: flex;
@@ -309,7 +309,7 @@ a {
     padding-top: 100px;
 }
 
-img {
+.image-customer-review {
     width: 70px;
     height: 100px;
 }
@@ -359,7 +359,35 @@ img {
     gap: 20px;
 }
 
-.img-review {
+.image-review {
     width: 130px;
     height: 140px;
+}
+
+/* Contact information */
+
+.contact-section {
+    width: 593px;
+    height: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-contact {
+    width: 100px;
+}
+
+.text-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
 }

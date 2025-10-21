@@ -389,5 +389,20 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
+}
 
+/* Office building */
+.office-building {
+    width: 593px;
+    height: 588px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 30px;
+}
+
+.image-office-building {
+    width: 593px;
 }

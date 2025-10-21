@@ -460,3 +460,16 @@ textarea {
   height: 50px;
   font-size: 20px;
 }
+
+@media screen and (min-width: 650px){
+  .image-office-building {
+    width: 100%;
+  }
+  form {
+    width: 20%
+  }
+  hr {
+    width: 50%;
+    margin: 20px auto;
+  }
+}

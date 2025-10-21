@@ -293,44 +293,54 @@ a {
 
 .customer-review {
     background-color: #A6A6A6;
-    width: 593px;
-    height: 588px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
 }
 
 .image-section-customer-review {
-    width: 100px;
-    height: 200px;
     display: flex;
-    gap: 20px;
-    padding-left: 240px;
-    padding-top: 100px;
 }
 
 .image-customer-review {
-    width: 70px;
-    height: 100px;
+    width: 40%;
+    height: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.image-customer-review {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.h1-customer-review {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: 100;
 }
 
 .customer-review-text {
     color: white;
-    padding-top: 70px;
-    padding-left: 120px;
-    width: 450px;
-}
-
-.h1-customer-review {
-    margin-bottom: 20px;
+    font-weight: 100;
+    line-height: 130%;
+    width: 55%;
 }
 
 /* Review */
 
 .review {
-    width: 593px;
-    height: 588px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    
+    padding: 10px;
 }
 
 .h2-review {
@@ -342,8 +352,8 @@ a {
 
 .big-box-review {
     background-color: #A6A6A6;
-    width: 180px;
-    height: 550px;
+    width: 80%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -353,12 +363,15 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    padding: 50px;
 }
 
 .image-review {
-    width: 130px;
-    height: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
 }
 
 /* Contact information */
@@ -385,6 +398,7 @@ a {
     flex-direction: column;
     gap: 20px;
 }
+
 .text-contact p {
     display: flex;
     align-items: center;

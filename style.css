@@ -176,8 +176,6 @@ body {
 /* footer */
 
 footer {
-    /* width: 593px; */
-    /* height: 588px; */
     font-family: Arial;
     background-color: #8B806F;
     color: white;
@@ -304,7 +302,6 @@ a {
     height: 200px;
     display: flex;
     gap: 20px;
-    /* justify-content: center; */
     padding-left: 240px;
     padding-top: 100px;
 }
@@ -367,17 +364,20 @@ a {
 /* Contact information */
 
 .contact-section {
-    width: 593px;
-    height: 588px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 
 .image-contact {
-    width: 100px;
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .text-contact {
@@ -392,17 +392,57 @@ a {
 }
 
 /* Office building */
+
 .office-building {
-    width: 593px;
-    height: 588px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    font-size: 30px;
+    font-size: 25px;
+    padding: 30px;
 }
 
 .image-office-building {
-    width: 593px;
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    margin: 60px auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.h2-contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+input {
+  height: 40px;
+}
+
+select {
+  height: 40px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.submit-contact {
+  background-color: #3366ff;
+  border: none;
+  color: white;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
 }

@@ -550,8 +550,11 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
       background: rgba(0, 0, 0, 0.2);
-
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .room-list:hover {
   transform: translateY(-4px);
@@ -597,8 +600,23 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-button:hover { background-color: grey; }
+button:hover { 
+  background-color: grey; 
+}
 
+.info-row {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
 /* -------- DINING PAGE STYLES -------- */
 /* Header Section */
 

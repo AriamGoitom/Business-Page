@@ -1,0 +1,102 @@
+/* Contact information */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.image-contact {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Office building */
+
+.office-building {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.image-office-building {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    margin: 60px auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.h2-contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+input {
+  height: 40px;
+}
+
+select {
+  height: 40px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.submit-contact {
+  background-color: $primaryColor;
+  border: none;
+  color: white;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+  font-family: $fontFamily;
+}
+
+@media screen and (min-width: 650px){
+    .image-office-building {
+      width: 100%;
+    }
+
+    form {
+      width: 20%
+    }
+
+    hr {
+      width: 50%;
+      margin: 20px auto;
+    }
+  }

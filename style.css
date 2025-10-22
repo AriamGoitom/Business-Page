@@ -39,8 +39,11 @@ cursor: pointer;
 }
 
 .topnav-right a {
-color: white;
-font-size: 14px;
+/* color: white;*/
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+
 }
 
 .topnav-right a:hover {
@@ -140,7 +143,7 @@ align-items: center;
 .hero-image img {
 width: auto;
 object-fit: cover;
-opacity: 0.7;   /*to make picture lighter*/
+opacity: 0.5;   /*to make picture lighter*/
 }
 
 .hero-content {
@@ -157,8 +160,12 @@ font: 16px;
 .hero-btn {
 background-color: #3366ff;
 color: white;
-padding: 0.8rem;
-margin: 15px;
+padding: 1rem;
+margin: 1rem;
+/* margin: 15px; */
+max-width: 300px;
+width: 40%;
+/* width: 120px; */
 border: none;
 border-radius: 10px;
 cursor: pointer;
@@ -421,7 +428,7 @@ footer {
 }
 
 #button-footer {
-  background-color: grey;
+  background-color: #8c8c8c;
   color: white;
   border-radius: 10px;
   border: none;
@@ -433,7 +440,7 @@ footer {
   cursor: pointer;
 }
 #button-footer:hover {
-  background-color: grey;
+  background-color: #404040;
 }
 
 /* Bottom section: links + social media */
@@ -476,9 +483,6 @@ footer {
   padding-bottom: 10px;
   opacity: 0.9;
 }
-
-/* -------- DINING PAGE -------- */
-        /* Header Section */
 
 
 /* -------- ROOMS PAGE STYLES -------- */
@@ -550,6 +554,7 @@ button:hover {
 
 
 /* -------- DINING PAGE STYLES -------- */
+/* Header Section */
 
 .dining-hero img {
 width: 100%;
@@ -560,16 +565,6 @@ text-align: center;
 color: white;
 
 }
-/* .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-} */
-
 .hero-text {
     
     padding: 1rem;
@@ -578,7 +573,6 @@ color: white;
 .hero-text h1 {
     font-size: 1.6rem;
     margin: 10px;
-    
 }
 .hero-text p {
     font-size: 1rem;
@@ -588,6 +582,180 @@ color: white;
     margin: 0 auto;
     line-height: 1.5;
 }
+
+/* Dining section block 1 */
+.dining-section {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+/* 
+.dining-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+} */
+
+.dining-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dining-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Info text */
+.dining-info {
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+.dining-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.dining-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: auto;
+}
+
+/* .btn {
+  width: 70%;
+  max-width: 200px;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+} */
+
+.grey-btn {
+  background-color: #8c8c8c;
+  color: white;
+}
+.grey-btn:hover {
+  background-color: #404040;
+}
+
+.blue-btn {
+  background-color: #3366ff;
+  color: white;
+}
+.blue-btn:hover {
+  background-color: #0033cc;
+}
+
+
+
+
+/* Dining section block 2 */
+.dining-item {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column; /* stack image and text vertically */
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dining-image {
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  display: block;
+  margin: 0 auto;
+  padding: 0px;
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dining-image {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dining-info {
+  text-align: center;
+}
+
+.dining-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 70%;
+  max-width: 220px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.grey-btn {
+  background-color: #8c8c8c;
+  color: white;
+}
+.grey-btn:hover {
+  background-color: #404040;
+}
+
+.blue-btn {
+  background-color: #3366ff;
+  color: white;
+}
+.blue-btn:hover {
+  background-color: #0033cc;
+}
+
+
+/* Dining section block 3 */
+
+
+/* Dining section block 4 */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media queries  */
@@ -627,8 +795,8 @@ color: white;
     margin-right: 10px;}
 
 .hero-btn {
-    padding: 1rem;
-    margin: 15px;
+    padding: 1.2rem;
+    margin: 1.2rem;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -734,9 +902,118 @@ footer {
     flex: 1 1 calc(50% - 24px);
     max-width: calc(50% - 24px);
   }
-
-
+/* Dining page */
+/* Block 1 */
+  .dining-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+.dining-section {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
+  /* .dining-image {
+    width: 40%;
+    border-radius: 8px;
+  } */
+  .dining-card img {
+    width: 60%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .dining-info {
+    padding: 2rem;
+    text-align: left;   
+  }
+  .dining-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .dining-info p {
+    font-size: 1.05rem;
+  }
+
+  .dining-buttons {
+    /* padding: 1rem 2.2rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width:300px;
+  }
+  .dining-menu-btn {
+  background-color: #8c8c8c;
+  color: white;
+}
+.dining-menu-btn:hover {
+  background-color: #404040;
+}
+
+.dining-booking-btn {
+  background-color: #3366ff;
+  color: white;
+}
+.dining-booking-btn:hover {
+  background-color: #0033cc;
+}
+  
+/* Block 2 */
+
+.dining-item {
+    flex-direction: row; /* default: image left, text right */
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  /* Reverse layout for second item */
+  .dining-item.reverse {
+    flex-direction: row-reverse; /* image right, text left */
+  }
+    .dining-image {
+    width: 60%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    }
+  .dining-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+.dining-info {
+    padding: 1.5rem;
+    text-align: left;   
+  }
+  .dining-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .dining-info p {
+    font-size: 1.05rem;
+  }
+
+
+  .btn {
+    width: auto;
+  }
+}
+
+ 
 
 footer {
     font-family: Arial;
@@ -760,7 +1037,7 @@ footer {
 
 .hero-btn {
     padding: 1rem;
-    margin: 15px;
+    margin: 1rem;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -810,21 +1087,11 @@ footer {
     text-align: center;
     padding: 4rem 5rem;
   }
-
-  /* .member-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .member-content p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 2.5rem auto;
-  } */
-
-  .member-button {
+   .member-button {
     padding: 1rem 2.5rem;
     font-size: 1rem;
   }
+  /* Rooms page */
 
 .box-footer-3 {
     display: flex;
@@ -1072,5 +1339,78 @@ textarea {
     max-width: calc(33.333% - 24px);
   }
 
+/* Dining main section */
+  
+   .dining-card img {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+   }
+
+  .dining-buttons {
+    padding: 1rem 2.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 500px;
+ }
+  .grey-btn {
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+  }
+  
+  .blue-btn {
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
 
 }
+
+/* Dining block 2 */
+
+.dining-item.reverse {
+    flex-direction: row-reverse; /* image right, text left */
+  }
+    .dining-image {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    }
+  .dining-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+.dining-info {
+    padding: 1.5rem;
+    text-align: left;   
+  }
+  .dining-info h2 {
+    font-size: 1.5rem;
+  }
+  .dining-info p {
+    font-size: 1.05rem;
+  }
+  .btn {
+    width: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

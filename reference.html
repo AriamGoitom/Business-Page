@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/company-logo.png" width="100" alt="Asia Gargen Hotel logo">
+            </div>
+            <!-- Hamburger Navbar (mobile only) -->
+            <div class="hamburger">☰</div>
+
+            <!-- Navbar links (Desktop only) -->
+            <div class="topnav-center">
+                <a class="active" href="index.html">Home</a>
+                <a href="Rooms.html">Room</a>
+                <a href="dining.html">Dining</a>
+                <a href="#reference">Reference</a>
+                <a href="#about us">About Us</a>
+                <a href="#contact us">Contact Us</a>
+            </div>
+            <!-- Navbar search & language  -->
+            <div class="topnav-right">
+                <div>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+                </div>
+                <div class="search-box">
+                    <input width="20" type="text" placeholder="search">
+                </div>
+                <select class="lang-select">
+                    <option>EN</option>
+                    <option>SV</option>
+                </select>
+            </div>
+        </nav>
+
+        <!-- Responsiv Navbar Booking Form  -->
+        <section class="booking-bar">
+            <form action="/action_page.php" class="booking-form">
+
+                <label for="checkin" class="sr-only">Check in</label>
+                <input type="text" id="checkin" placeholder="Check in" onfocus="(this.type='date')"
+                    onblur="if(!this.value)this.type='text'">
+
+                <label for="checkout" class="sr-only">Check out</label>
+                <input type="text" id="checkout" placeholder="Check out" onfocus="(this.type='date')"
+                    onblur="if(!this.value)this.type='text'">
+
+                <label for="adult" class="sr-only">Adult</label>
+                <select id="adult" name="adult">
+                    <option value="0">Adult</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="children" class="sr-only">Children</label>
+                <select id="children" name="children">
+                    <option value="0">Children</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <button type="submit" class="btn-book">Book</button>
+
+            </form>
+        </section>
+    </header>
+
+    <div class="customer-review">
+        <div class="image-section-customer-review">
+            <img class="image-customer-review" src="./img/drink-1.webp" alt="A picture of a drink">
+            <img class="image-customer-review" src="./img/drink-2.webp" alt="A picture of a drink">
+        </div>
+        <div class="customer-review-text">
+            <h1 class="h1-customer-review">
+                Customer review
+            </h1>
+            <p class="p-customer-review">
+                Welcome! Read what our customer have to say about our products and services provides by our company. If you will also give a customer review we will be happy to read it.
+            </p>
+        </div>
+    </div>
+    <div class="review">
+        <h2 class="h2-review">Review of our hotel</h2>
+        <div class="big-box-review">
+            <div class="small-box-review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <h2 class="h2-review">Review of our restaurant</h2>
+        <div class="big-box-review">
+            <div class="small-box-review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+            </div>
+        </div>
+    </div>
+    <div class="review">
+        <h2 class="h2-review">Review of our service</h2>
+        <div class="big-box-review">
+            <div class="small-box-review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+                <img class="image-review" src="./img/custumer-review-picture.png" alt="A customer review">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="box-footer-1">
+            <div class="image-footer">
+                <img class="logo-footer" src="./img/company-logo.png" alt="A picture of the logo">
+            </div>
+            <div class="text-footer-1">
+                <p class="title-footer">Asia Garden Hotel</p>
+                <p>48 Oriental Avenue, Bangkok, 10500, Thailand</p>
+                <p>+66 (0) 2 659 9000 </p>
+                <p>mobkk-reservations@mohg.com</p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="footer-bottom">
+
+            <div class="box-footer-2">
+                <div class="text-footer-2">
+                    <p class="newsletter-footer">
+                        Newsletter
+    
+                    </p>
+                    <p class="newsletter-text-footer">
+                        Subscribe to our newsletter to see what's happening at
+                        Asia Garden Hotel and to take advantage of our offers.
+                    </p>
+                </div>
+                <form class="form-footer">
+                    <input type="text" placeholder="email adress" id="input-footer">
+                    <input type="submit" value="Sign up" id="button-footer">
+                </form>
+                <!-- <div class="small-box-footer-1"></div> -->
+            </div>
+
+            <hr>
+            <div class="box-footer-3">
+                <div class="links-footer">
+                    <a href="">Home</a>
+                    <a href="">Room</a>
+                    <a href="">Restaurant</a>
+                    <a href="">Reference</a>
+                    <a href="">About us</a>
+                    <a href="">Contact us</a>
+                </div>
+                <div class="social-media-footer">
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img
+                            src="./img/youtube.png" alt=""></a>
+                    <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt=""></a>
+                    <a href="https://x.com" target="_blank"><img src="./img/twitter.png" alt=""></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt=""></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+                </div>
+                <div class="copyright-notice">
+                    <p>Asia Garden Hotel @ 2025. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

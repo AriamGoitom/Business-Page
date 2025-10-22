@@ -569,6 +569,18 @@ footer {
   margin-bottom: 6px;
   font-size: 0.95rem;
 }
+
+.icon-bed {
+  width: 5vw;         
+  max-width: 40px;    
+  height: auto;     
+}
+.bed-info {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
 button {
   background-color: #121619;
   color: white;

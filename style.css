@@ -507,15 +507,27 @@ footer {
 /* -------- ROOMS PAGE STYLES -------- */
 
 
-.h1 {
-  font-size: 1.8rem;
+.h1, h2 {
+  font-family: 'Montagu Slab', serif;
+  font-weight: 700;
+}
+.roomh1 {
+    font-size: 3rem;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.rooms-section {
+  padding: 2rem;
   text-align: center;
+  background-color: #f8f8f8;
 }
 
-.description {
-  margin: 24px 0;
-  font-size: 1rem;
-  line-height: 1.5;
+.rooms-description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
 }
 
 .roombigpic img {

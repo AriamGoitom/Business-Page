@@ -501,162 +501,86 @@ footer {
 
 /* -------- ROOMS PAGE STYLES -------- */
 
- .roombigpic img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      display: block;
-    }
 
-    /* Header */
-    header h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin: 2rem 0;
-      color: #222;
-    }
+.h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
 
-    /* Description */
-    .description {
-      max-width: 800px;
-      margin: 0 auto 2rem;
-      padding: 0 1rem;
-      text-align: center;
-    }
+.description {
+  margin: 24px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
-    /* Rooms container */
-    .Rooms {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-    }
+.roombigpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-    /* Room card */
-    .room-list {
-      flex: 1 1 300px;
-      max-width: 400px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 1rem;
-    }
+.Rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 70px;
+}
 
-    .room-list h2 {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-      text-align: center;
-    }
+.room-list {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: rgba(0, 0, 0, 0.2);
 
-    .room-list ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 1rem;
-    }
+}
 
-    .room-list li {
-      margin-bottom: 0.5rem;
-    }
+.room-list:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
 
-    .room-list button {
-      display: block;
-      width: 100%;
-      padding: 0.5rem;
-      background: #333;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    /* Slideshow styles */
-    .slideshow {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 1rem;
-    }
-
-    .slides {
-      display: flex;
-      width: 300%;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .slide {
-      flex: 1 0 100%;
-    }
-
-    .slide img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-
-    /* Hide all slides by default */
-    .slide {
-      display: none;
-    }
-
-    /* Show selected slide */
-    input[type="radio"] {
-      display: none;
-    }
-
-    input:checked + .slides .slide {
-      display: block;
-    }
-
-    /* Arrows */
-    .arrows {
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-      pointer-events: none;
-    }
-
-    .arrows label {
-      pointer-events: all;
-      background: rgba(0,0,0,0.5);
-      color: white;
-      padding: 0.5rem;
-      font-size: 1.5rem;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-
-    /* Dots */
-    .dots {
-      text-align: center;
-      margin-top: 0.5rem;
-    }
-
-    .dot {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      background: #ccc;
-      border-radius: 50%;
-      margin: 0 5px;
-      cursor: pointer;
-    }
-  /* Hero image */
-   
-    /* Responsive */
-    @media (max-width: 768px) {
-      .Rooms {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .room-list {
-        max-width: 90%;
-      }
-    }
+.room-list h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.room-list ul {
+  list-style: none;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+.room-list li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+button {
+  background-color: #121619;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover { background-color: grey; }
 
 /* -------- DINING PAGE STYLES -------- */
 /* Header Section */
@@ -1006,6 +930,8 @@ footer {
     flex: 1 1 calc(50% - 24px);
     max-width: calc(50% - 24px);
   }
+
+
 /* Dining page */
 /* Block 1 */
   .dining-card {

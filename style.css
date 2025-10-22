@@ -8,6 +8,8 @@ body {
 min-height: 100vh;
 font-family: Arial, Helvetica, sans-serif;
 background-color: white;
+      line-height: 1.6;
+
 }
 
 /* -------- HOMEPAGE -------- */
@@ -498,72 +500,163 @@ footer {
 
 
 /* -------- ROOMS PAGE STYLES -------- */
-.h1 {
-  font-size: 1.8rem;
-  text-align: center;
-}
 
-/* Description */
-.description {
-  margin: 24px 0;
-  font-size: 1rem;
-  line-height: 1.5;
-}
+ .roombigpic img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
 
-/* Room lists container */
-.Rooms {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-  padding: 0 12px;
-}
+    /* Header */
+    header h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 2rem 0;
+      color: #222;
+    }
 
-/* Individual room cards */
-.room-list {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 16px;
-  flex: 1 1 100%;
-  max-width: 100%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+    /* Description */
+    .description {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
 
-.room-list h2 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
+    /* Rooms container */
+    .Rooms {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
 
-.room-list ul {
-  list-style: none;
-  margin: 0 0 12px 0;
-  padding: 0;
-}
+    /* Room card */
+    .room-list {
+      flex: 1 1 300px;
+      max-width: 400px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
 
-.room-list li {
-  margin-bottom: 6px;
-  font-size: 0.95rem;
-}
+    .room-list h2 {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      text-align: center;
+    }
 
-button {
-  background-color: #121619;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-size: 1rem;
-  width: 100%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+    .room-list ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+    }
 
-button:hover {
-  background-color: grey;
-}
+    .room-list li {
+      margin-bottom: 0.5rem;
+    }
 
+    .room-list button {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Slideshow styles */
+    .slideshow {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      flex: 1 0 100%;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    /* Hide all slides by default */
+    .slide {
+      display: none;
+    }
+
+    /* Show selected slide */
+    input[type="radio"] {
+      display: none;
+    }
+
+    input:checked + .slides .slide {
+      display: block;
+    }
+
+    /* Arrows */
+    .arrows {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .arrows label {
+      pointer-events: all;
+      background: rgba(0,0,0,0.5);
+      color: white;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    /* Dots */
+    .dots {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #ccc;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  /* Hero image */
+   
+    /* Responsive */
+    @media (max-width: 768px) {
+      .Rooms {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .room-list {
+        max-width: 90%;
+      }
+    }
 
 /* -------- DINING PAGE STYLES -------- */
 /* Header Section */

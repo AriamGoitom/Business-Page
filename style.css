@@ -306,6 +306,7 @@ h1 {
   flex-direction: column;
   background-color: #dadada; /* light gray background */
   text-align: center;
+  margin-bottom: 0rem;
 }
 
 .member-image img {
@@ -319,6 +320,7 @@ h1 {
   /* padding: 2.5rem 1.5rem; */
   /* padding: 1rem 2rem; */
   padding: 40px;
+ 
 
 }
 
@@ -339,7 +341,16 @@ h1 {
   display: inline-block;
   background-color: #1a1a1a;
   color: #fff;
-  padding: 0.9rem 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  /* margin: 15px; */
+  max-width: 300px;
+  width: 30%;
+
+
+
+
+  /* padding: 0.9rem 2rem; */
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
@@ -873,6 +884,9 @@ footer {
   .links-footer {
     gap: 25px;
   }
+    .member-section {
+        margin: 3rem;
+    }
   .member-content {
     padding: 3rem 4rem;
   }
@@ -1034,8 +1048,32 @@ footer {
     font-weight: bold;
 }
 
+ .member-section {
+    flex-direction: row; /* image left, text right */
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    /* margin: 0 auto; */
+    margin: 4rem;
+    }
+  }
+
+  .member-image,
+  .member-content {
+  flex: 1 1 30%; }
+  
+
+  .member-content {
+    text-align: right;
+    padding: 4rem 5rem;
+  }
+   .member-button {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+
 .box-footer-1 {
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 100px;
   }
 
@@ -1062,27 +1100,7 @@ footer {
     justify-content: flex-end;
     gap: 25px;
   }
-  .member-section {
-    flex-direction: row; /* image left, text right */
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .member-image,
-  .member-content {
-    flex: 1 1 30%;
-  }
-
-  .member-content {
-    text-align: center;
-    padding: 4rem 5rem;
-  }
-   .member-button {
-    padding: 1rem 2.5rem;
-    font-size: 1rem;
-  }
+ 
   /* Rooms page */
 .Rooms {
     gap: 32px;
@@ -1155,7 +1173,6 @@ footer {
   .btn {
     width: auto;
   }
-}
 
 /* ARIAM */
 

@@ -1,3 +1,4 @@
+
 * {
 margin: 0;
 padding: 0;
@@ -39,8 +40,11 @@ cursor: pointer;
 }
 
 .topnav-right a {
-color: white;
-font-size: 14px;
+/* color: white;*/
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+
 }
 
 .topnav-right a:hover {
@@ -140,7 +144,7 @@ align-items: center;
 .hero-image img {
 width: auto;
 object-fit: cover;
-opacity: 0.7;   /*to make picture lighter*/
+opacity: 0.5;   /*to make picture lighter*/
 }
 
 .hero-content {
@@ -157,8 +161,12 @@ font: 16px;
 .hero-btn {
 background-color: #3366ff;
 color: white;
-padding: 0.8rem;
-margin: 15px;
+padding: 1rem;
+margin: 1rem;
+/* margin: 15px; */
+max-width: 300px;
+width: 40%;
+/* width: 120px; */
 border: none;
 border-radius: 10px;
 cursor: pointer;
@@ -298,6 +306,7 @@ h1 {
   flex-direction: column;
   background-color: #dadada; /* light gray background */
   text-align: center;
+  margin-bottom: 0rem;
 }
 
 .member-image img {
@@ -311,6 +320,7 @@ h1 {
   /* padding: 2.5rem 1.5rem; */
   /* padding: 1rem 2rem; */
   padding: 40px;
+ 
 
 }
 
@@ -331,7 +341,16 @@ h1 {
   display: inline-block;
   background-color: #1a1a1a;
   color: #fff;
-  padding: 0.9rem 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  /* margin: 15px; */
+  max-width: 300px;
+  width: 30%;
+
+
+
+
+  /* padding: 0.9rem 2rem; */
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
@@ -421,7 +440,7 @@ footer {
 }
 
 #button-footer {
-  background-color: grey;
+  background-color: #8c8c8c;
   color: white;
   border-radius: 10px;
   border: none;
@@ -433,7 +452,7 @@ footer {
   cursor: pointer;
 }
 #button-footer:hover {
-  background-color: grey;
+  background-color: #404040;
 }
 
 /* Bottom section: links + social media */
@@ -476,9 +495,6 @@ footer {
   padding-bottom: 10px;
   opacity: 0.9;
 }
-
-/* -------- DINING PAGE -------- */
-        /* Header Section */
 
 
 /* -------- ROOMS PAGE STYLES -------- */
@@ -550,6 +566,7 @@ button:hover {
 
 
 /* -------- DINING PAGE STYLES -------- */
+/* Header Section */
 
 .dining-hero img {
 width: 100%;
@@ -560,16 +577,6 @@ text-align: center;
 color: white;
 
 }
-/* .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-} */
-
 .hero-text {
     
     padding: 1rem;
@@ -578,7 +585,6 @@ color: white;
 .hero-text h1 {
     font-size: 1.6rem;
     margin: 10px;
-    
 }
 .hero-text p {
     font-size: 1rem;
@@ -588,6 +594,176 @@ color: white;
     margin: 0 auto;
     line-height: 1.5;
 }
+
+/* Dining section block 1 */
+.dining-section {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  
+}
+/* 
+.dining-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+} */
+
+.dining-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dining-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Info text */
+.dining-info {
+  background-color: #e0e0e0;
+  text-align: center;
+}
+
+.dining-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.dining-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: auto;
+}
+
+/* .btn {
+  width: 70%;
+  max-width: 200px;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+} */
+
+.grey-btn {
+  background-color: #8c8c8c;
+  color: white;
+}
+.grey-btn:hover {
+  background-color: #404040;
+}
+
+.blue-btn {
+  background-color: #3366ff;
+  color: white;
+}
+.blue-btn:hover {
+  background-color: #0033cc;
+}
+
+
+
+
+/* Dining section block 2 */
+.dining-item {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column; /* stack image and text vertically */
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dining-image {
+  /* max-width: 600px; */
+  /* border-radius: 10px; */
+  display: block;
+  margin: 0 auto;
+  padding: 0px;
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dining-image {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dining-info {
+  text-align: center;
+}
+
+.dining-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 70%;
+  max-width: 220px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.grey-btn {
+  background-color: #8c8c8c;
+  color: white;
+}
+.grey-btn:hover {
+  background-color: #404040;
+}
+
+.blue-btn {
+  background-color: #3366ff;
+  color: white;
+}
+.blue-btn:hover {
+  background-color: #0033cc;
+}
+
+
+/* Dining section block 3 */
+
+
+/* Dining section block 4 */
+
+
+
+
+
+
+
+
+
 
 
 /* media queries  */
@@ -627,8 +803,8 @@ color: white;
     margin-right: 10px;}
 
 .hero-btn {
-    padding: 1rem;
-    margin: 15px;
+    padding: 1.2rem;
+    margin: 1.2rem;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -708,6 +884,9 @@ footer {
   .links-footer {
     gap: 25px;
   }
+    .member-section {
+        margin: 3rem;
+    }
   .member-content {
     padding: 3rem 4rem;
   }
@@ -734,9 +913,118 @@ footer {
     flex: 1 1 calc(50% - 24px);
     max-width: calc(50% - 24px);
   }
-
-
+/* Dining page */
+/* Block 1 */
+  .dining-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+.dining-section {
+  background-color: #e0e0e0;
+  padding: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
+  /* .dining-image {
+    width: 40%;
+    border-radius: 8px;
+  } */
+  .dining-card img {
+    width: 60%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .dining-info {
+    padding: 2rem;
+    text-align: left;   
+  }
+  .dining-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .dining-info p {
+    font-size: 1.05rem;
+  }
+
+  .dining-buttons {
+    /* padding: 1rem 2.2rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width:300px;
+  }
+  .dining-menu-btn {
+  background-color: #8c8c8c;
+  color: white;
+}
+.dining-menu-btn:hover {
+  background-color: #404040;
+}
+
+.dining-booking-btn {
+  background-color: #3366ff;
+  color: white;
+}
+.dining-booking-btn:hover {
+  background-color: #0033cc;
+}
+  
+/* Block 2 */
+
+.dining-item {
+    flex-direction: row; /* default: image left, text right */
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  /* Reverse layout for second item */
+  .dining-item.reverse {
+    flex-direction: row-reverse; /* image right, text left */
+  }
+    .dining-image {
+    width: 60%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    }
+  .dining-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+.dining-info {
+    padding: 1.5rem;
+    text-align: left;   
+  }
+  .dining-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .dining-info p {
+    font-size: 1.05rem;
+  }
+
+
+  .btn {
+    width: auto;
+  }
+}
+
+ 
 
 
 /* Desktop */
@@ -755,13 +1043,37 @@ footer {
 
 .hero-btn {
     padding: 1rem;
-    margin: 15px;
+    margin: 1rem;
     font-size: 1rem;
     font-weight: bold;
 }
 
+ .member-section {
+    flex-direction: row; /* image left, text right */
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    /* margin: 0 auto; */
+    margin: 4rem;
+    }
+  }
+
+  .member-image,
+  .member-content {
+  flex: 1 1 30%; }
+  
+
+  .member-content {
+    text-align: right;
+    padding: 4rem 5rem;
+  }
+   .member-button {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+
 .box-footer-1 {
-    justify-content: flex-start;
+    justify-content: center;
     padding-left: 100px;
   }
 
@@ -788,41 +1100,8 @@ footer {
     justify-content: flex-end;
     gap: 25px;
   }
-  .member-section {
-    flex-direction: row; /* image left, text right */
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .member-image,
-  .member-content {
-    flex: 1 1 30%;
-  }
-
-  .member-content {
-    text-align: center;
-    padding: 4rem 5rem;
-  }
-
-  /* .member-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .member-content p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto 2.5rem auto;
-  } */
-
-  .member-button {
-    padding: 1rem 2.5rem;
-    font-size: 1rem;
-  }
-
-
-/* Rooms page */
+ 
+  /* Rooms page */
 .Rooms {
     gap: 32px;
   }
@@ -832,5 +1111,294 @@ footer {
     max-width: calc(33.333% - 24px);
   }
 
+/* Dining main section */
+  
+   .dining-card img {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+   }
+
+  .dining-buttons {
+    padding: 1rem 2.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 500px;
+ }
+  .grey-btn {
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+  }
+  
+  .blue-btn {
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
 
 }
+
+/* Dining block 2 */
+
+.dining-item.reverse {
+    flex-direction: row-reverse; /* image right, text left */
+  }
+    .dining-image {
+    width: 30%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    }
+  .dining-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+.dining-info {
+    padding: 1.5rem;
+    text-align: left;   
+  }
+  .dining-info h2 {
+    font-size: 1.5rem;
+  }
+  .dining-info p {
+    font-size: 1.05rem;
+  }
+  .btn {
+    width: auto;
+  }
+
+/* ARIAM */
+
+/* reference */
+
+.customer-review {
+    background-color: #A6A6A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+}
+
+.image-section-customer-review {
+    display: flex;
+}
+
+.image-customer-review {
+    width: 40%;
+    height: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.image-customer-review {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.h1-customer-review {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: 100;
+}
+
+.customer-review-text {
+    color: white;
+    font-weight: 100;
+    line-height: 130%;
+    width: 55%;
+}
+
+/* Review */
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.h2-review {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.big-box-review {
+    background-color: #A6A6A6;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.small-box-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.image-review {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Contact information */
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.image-contact {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.text-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Office building */
+
+.office-building {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.image-office-building {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    margin: 60px auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.h2-contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+input {
+  height: 40px;
+}
+
+select {
+  height: 40px;
+}
+
+textarea {
+  height: 80px;
+}
+
+.submit-contact {
+  background-color: #3366ff;
+  border: none;
+  color: white;
+  width: 50%;
+  height: 50px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 650px){
+    .image-office-building {
+      width: 100%;
+    }
+
+    form {
+      width: 20%
+    }
+
+    hr {
+      width: 50%;
+      margin: 20px auto;
+    }
+    
+    .customer-review {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      /* align-items: center; */
+      height: 600px;
+      margin: 80px;
+    }
+
+    .h1-customer-review {
+      width: 350px;
+    }
+
+    .customer-review-text {
+      width: 300px;
+      font-size: 20px;
+    }
+
+    .image-section-customer-review {
+      width: 700px;
+    }
+
+    .image-customer-review{
+      height: 400px ;
+    }
+
+    .big-box-review {
+      width: 70%;
+    }
+
+    .small-box-review {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-review {
+      width: 30%;
+    }
+  }

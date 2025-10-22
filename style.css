@@ -478,6 +478,7 @@ textarea {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-around;
+      /* align-items: center; */
       height: 600px;
       margin: 80px;
     }
@@ -497,5 +498,20 @@ textarea {
 
     .image-customer-review{
       height: 400px ;
+    }
+
+    .big-box-review {
+      width: 70%;
+    }
+
+    .small-box-review {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-review {
+      width: 30%;
     }
 }

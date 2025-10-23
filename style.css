@@ -517,15 +517,27 @@ footer {
 /* -------- ROOMS PAGE STYLES -------- */
 
 
-.h1 {
-  font-size: 1.8rem;
+.h1, h2 {
+  font-family: 'Montagu Slab', serif;
+  font-weight: 700;
+}
+.roomh1 {
+    font-size: 3rem;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.rooms-section {
+  padding: 2rem;
   text-align: center;
+  background-color: #f8f8f8;
 }
 
-.description {
-  margin: 24px 0;
-  font-size: 1rem;
-  line-height: 1.5;
+.rooms-description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
 }
 
 .roombigpic img {
@@ -560,8 +572,11 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
       background: rgba(0, 0, 0, 0.2);
-
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .room-list:hover {
   transform: translateY(-4px);
@@ -607,8 +622,23 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-button:hover { background-color: grey; }
+button:hover { 
+  background-color: grey; 
+}
 
+.info-row {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 10px;
+}
 /* -------- DINING PAGE STYLES -------- */
 /* Header Section */
 

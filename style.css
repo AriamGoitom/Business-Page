@@ -527,7 +527,6 @@ footer {
 .rooms-section {
   padding: 2rem;
   text-align: center;
-  background-color: #f8f8f8;
 }
 
 .rooms-description {
@@ -815,12 +814,32 @@ color: white;
     margin-bottom: 2rem;
 }
 
+.containercatchphrase {
+  position: relative;
+  text-align: center;
+  color: white;
+      margin-bottom: 4rem;
 
+}
 
-
-
-
-
+.catchphrasecenter {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: darkgoldenrod;
+    font-style: italic;
+    font-family: -webkit-body;
+    font-size: 22px;
+}
+.catchphrasecenter h2 {
+    font-size: 19px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: ui-rounded;
+}
 
 /* media queries  */
 /* Tablets */

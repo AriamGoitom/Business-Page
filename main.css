@@ -172,7 +172,8 @@ textarea {
 }
 
 .image-review {
-  height: auto;
+  width: 90%;
+  /* height: auto; */
   display: block;
   margin: 0 auto;
   padding: 0;

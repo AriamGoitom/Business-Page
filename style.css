@@ -806,12 +806,14 @@ color: white;
     margin-bottom: 20px;
 }
 
-
-
-
-
-
-
+.our-team {
+    font-weight: lighter;
+    padding: 2rem;
+    text-align: justify;
+    background-color: #1a1a1a;
+    color: white;
+    margin-bottom: 2rem;
+}
 
 
 
@@ -1187,5 +1189,9 @@ footer {
 
 }
 
+  /* about us page */
 
-
+.our-team {
+    font-size: 24px;
+    padding: 50px;
+}

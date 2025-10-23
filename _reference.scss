@@ -37,7 +37,7 @@
 }
 
 .customer-review-text {
-    color: white;
+    color: black;
     font-weight: 100;
     line-height: 130%;
     width: 55%;
@@ -77,7 +77,8 @@
 }
 
 .image-review {
-    height: auto;
+    width: 90%;
+    /* height: auto; */
     display: block;
     margin: 0 auto;
     padding: 0;

@@ -14,6 +14,7 @@ background-color: white;
 
 /* -------- HOMEPAGE -------- */
       /* Header Section */
+
 .header {
 padding: 0;
 margin: 0;
@@ -58,6 +59,7 @@ cursor: pointer;
 .topnav-center {
 display: none;
 }
+
 
 /* Hamburger Navbar. Show this on mobile only */
 .hamburger {
@@ -237,31 +239,39 @@ h1 {
 
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: px;
+  transform: translateY(-50%); 
+  padding: 16px 20px;          
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  font-size: 28px;            
+  background-color: rgba(0, 0, 0, 0.4); /* transparent black background */
+  border-radius: 50%;          /* circular button look */
   user-select: none;
+  transition: all 0.3s ease;
+  z-index: 10;                 /* make sure arrows sit above images */
 }
 
-/* Position the "next button" to the right */
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 10px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+
+.prev {
+  left: 10px; 
 }
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* darker on hover */
+  transform: translateY(-50%) scale(1.1); /* small zoom-in on hover */
+}
+
 
 /* Caption text */
 .text {
@@ -794,6 +804,7 @@ color: white;
 .hamburger {
     display: none;
 }
+
 .topnav-center {
     margin: 0;
     padding: 0;
@@ -810,10 +821,12 @@ color: white;
     padding: 14px 16px;
 }
     
-.topnav-center a:hover {
+.topnav-center a:active {
     background-color: #8B806f;
     font-size: 16px;
-}
+    font-weight: bold;
+    border-bottom: 2px solid #8b806f;
+} 
 
   .booking-form {
     flex-direction: row;        /* make all inputs in one line */
@@ -1083,7 +1096,6 @@ footer {
     /* margin: 0 auto; */
     margin: 4rem;
     }
-  }
 
   .member-image,
   .member-content {
@@ -1137,7 +1149,7 @@ footer {
     flex: 1 1 calc(33.333% - 24px);
     max-width: calc(33.333% - 24px);
   }
-
+}
 
 
 

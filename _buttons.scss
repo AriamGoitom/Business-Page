@@ -9,13 +9,14 @@
 
 
 $btn-color: #3366ff; // base color
-$btn-hover: #0033cc; // hover color
+$btn-hover: #0033cc; // hover color 
 
 
-$btn-color-80: rgba($btn-color, 0.8);
+$btn-color-80: rgba($btn-color);
+
 
 .btn-book {
-  background-color: $btn-color-80; // use 80% opacity
+  background-color: variables.$btn-color; 
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
@@ -24,10 +25,10 @@ $btn-color-80: rgba($btn-color, 0.8);
   cursor: pointer;
   transition: background-color 0.3s ease;
   align-self: center;
-  padding: 0.8rem 1.6rem; // added padding for better click area
+  padding: 0.8rem 1.6rem;
 
   &:hover {
-    background-color: $btn-hover; // full color (no opacity)
+    background-color: darken(variables.$btn-color, 10%); // slightly darker on hover
   }
 }
 

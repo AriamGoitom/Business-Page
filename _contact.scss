@@ -49,7 +49,7 @@
 
 /* Form */
 
-form {
+.form-contact {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -64,11 +64,11 @@ form {
   margin-top: 30px;
 }
 
-input {
+.input-contact {
   height: 40px;
 }
 
-select {
+.select.contact {
   height: 40px;
 }
 
@@ -91,7 +91,7 @@ textarea {
       width: 100%;
     }
 
-    form {
+    .form-contact {
       width: 20%
     }
 

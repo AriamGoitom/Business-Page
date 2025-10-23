@@ -546,12 +546,13 @@ footer {
 }
 
 .Rooms {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 24px;
+  padding: 2rem;
   justify-content: center;
-  padding: 70px;
 }
+
 
 .room-list {
   background-color: #fff;
@@ -978,13 +979,11 @@ footer {
 
 /* Rooms page */
 .Rooms {
-    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 45px;
+
   }
 
-.room-list {
-    flex: 1 1 calc(50% - 24px);
-    max-width: calc(50% - 24px);
-  }
 
 
 /* Dining page */
@@ -1158,13 +1157,10 @@ footer {
  
   /* Rooms page */
 .Rooms {
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 130px;
   }
 
-.room-list {
-    flex: 1 1 calc(33.333% - 24px);
-    max-width: calc(33.333% - 24px);
-  }
 }
 
 

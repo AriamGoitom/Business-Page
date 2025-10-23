@@ -110,26 +110,26 @@ display: none;
 }
 
 /* CTA BOOK button */
-.btn-book {
-  background-color: #3366ff; 
+ /* .btn-book { */
+  /* background-color: #3366ff; 
   color: white;
   font-weight: 600;
   font-size: 1rem;
   /* width: 100px; */
-  border: none;
+  /* border: none;
   border-radius: 0.6rem;
   /* padding: 0.8rem; */
-  cursor: pointer;
+  /* cursor: pointer;
   transition: background-color 0.3s;
   align-self: center;
-}
+} */ 
 
-.btn-book:hover {
+/* .btn-book:hover {
   background-color: #0033cc;
 }
 
 /* Accessibility: hide labels visually but keep them for screen readers */
-.sr-only {
+/* .sr-only {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -137,8 +137,8 @@ display: none;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-  border: 0;
-}
+  border: 0; */
+
 
  
 

@@ -1,3 +1,34 @@
+.button {
+  background-color: #3366ff;
+}
+
+.btn-book {
+  background-color: rgba(51, 102, 255, 0.8);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  padding: 0.8rem 1.6rem;
+}
+.btn-book:hover {
+  background-color: #0033cc;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Contact information */
 .contact-section {
   display: flex;

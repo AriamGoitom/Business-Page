@@ -1,0 +1,44 @@
+// _buttons.scss
+
+@use 'variables';
+
+
+.button {
+  background-color: variables.$btn-color;
+}
+
+
+$btn-color: #3366ff; // base color
+$btn-hover: #0033cc; // hover color
+
+
+$btn-color-80: rgba($btn-color, 0.8);
+
+.btn-book {
+  background-color: $btn-color-80; // use 80% opacity
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  padding: 0.8rem 1.6rem; // added padding for better click area
+
+  &:hover {
+    background-color: $btn-hover; // full color (no opacity)
+  }
+}
+
+// ♿ Accessibility helper class (same as your CSS)
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

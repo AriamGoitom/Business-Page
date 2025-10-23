@@ -796,6 +796,30 @@ color: white;
   background-color: #0033cc;
 }
 
+
+/* -------- ABOUT US PAGE STYLES -------- */
+.about-bigpic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media queries  */
 /* Tablets */
 /* media queries tablet */
